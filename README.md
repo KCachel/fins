@@ -2,7 +2,8 @@
 Group fairness auditing methods for set selections
 
 
-**fins** is a Python package that provides auditing metrics for a variety of subset selection problems. The package includes a suite of metrics. 
+
+**fins** is a Python library that provides group fairness auditing metrics for a variety of subset selection problems. The package includes a suite of metrics.
 
 
 
@@ -22,7 +23,7 @@ source fins/bin/activate
 ```
 2. Install via pip
 ```
-pip install fairauditingfins
+pip install finsfairauditing
 ```
 You can also install fins directly from source.
 ```
@@ -38,14 +39,13 @@ For a sample auditing guide see [fins github repo](https://github.com/KCachel/fi
 To use fins in your code run
 
 ```py
-from fairauditingfins import fins
+from finsfairauditing import fins
 ```
 
 To audit a subset. Create the larger pool and subset:
 
 ```py
 import numpy as np
-import fins as fns
 pool_items = np.asarray([1,2,3,4])
 pool_groups = np.asarray([0, 0, 1, 1])
 pool_scores = np.asarray([100, 85, 54, 12])
@@ -55,7 +55,7 @@ subset_scores = np.asarray([100,12])
 ```
 Choose the relevant fairness metric. Then return the per group metric and the high-level metric.
 ```py
-rselectrt, rp_val = fns.relevance_parity(pool_items, pool_scores, pool_groups, subset_items, subset_scores, subset_groups)
+rselectrt, rp_val = fins.relevance_parity(pool_items, pool_scores, pool_groups, subset_items, subset_scores, subset_groups)
 ```
 ## Metrics in fins
 fins provides the following pre-defined group fairness metrics for subset selectionss:
