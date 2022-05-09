@@ -10,9 +10,8 @@ Group fairness auditing methods for set selections
 1. [Basic installation instructions](#basic-installation-instructions)
 2. [Quick start examples](#quick-start-examples)
 3. [Metrics in fins](#mettics-in-find)
-5. [Scope and limitations](#scope-and-limitations)
-6. [Citing fins](#citing-fins)
-7. [References](#references)
+4. [Citing fins](#citing-fins)
+
 
 
 ## Basic installation instructions
@@ -71,3 +70,15 @@ fins provides the following pre-defined group fairness metrics for subset select
 - **Relevancce Parity**: To audit if groups are represented proportional to their average score (i.e., score-based relevance).
 - **Score Parity**: To audit if the group-total score of the selected set is proportional to the number of items per group in the set.
 - **Score Balance**: To audit if each groups receive and equal share of the selected set's total score.
+
+## Citing fins
+If you uses the fins auditing package we encourage
+you to cite our paper:
+```
+@inproceedings{cachel2022fins,
+  title={FINS Auditing Framework: Group Fairness for Subset Selections},
+  author={Cachel, Kathleen and Rundensteiner, Elke},
+  booktitle={Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society},
+  year={2022}
+}
+```
