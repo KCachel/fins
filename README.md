@@ -22,7 +22,7 @@ source fins/bin/activate
 ```
 2. Install via pip
 ```
-pip install fins
+pip install fairauditingfins
 ```
 You can also install fins directly from source.
 ```
@@ -38,7 +38,7 @@ For a sample auditing guide see [fins github repo](https://github.com/KCachel/fi
 To use fins in your code run
 
 ```py
-from fins import *
+from fairauditingfins import fins
 ```
 
 To audit a subset. Create the larger pool and subset:
