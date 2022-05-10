@@ -45,7 +45,7 @@ from finsfairauditing import fins
 
 ## Quick start examples
 Fins contains a suite of group fairness metrics for subset selection tasks.
-For a sample auditing guide see [fins github repo](https://github.com/KCachel/fins).
+For a sample auditing guide see [fins example notebook](https://github.com/KCachel/fins/blob/main/fins_auditing_example.ipynb).
 
 To use fins in your code run
 
@@ -83,7 +83,7 @@ fins provides the following pre-defined group fairness metrics for subset select
 - **Score Balance**: To audit if each groups receive and equal share of the selected set's total score.
 
 ## Citing fins
-If you uses the fins auditing package we encourage
+If you use the fins auditing package we encourage
 you to cite our paper:
 ```
 @inproceedings{cachel2022fins,
