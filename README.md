@@ -78,7 +78,7 @@ fins provides the following pre-defined group fairness metrics for subset select
 - **Qualified Balance**: equal presence group fairness of the selected set (i.e., score greater than or equal to  q). To audit if the selected set contain an equal number of qualified items from each group.
 - **Calibrated Parity**: statistical parity (proportional presence) group fairness of the selected set from specified score bins. To audit if items with similiar scores are if items with similar scores are treated similarly (via proportional presence) regardless of group membership.
 - **Calibrated Balance**: equal presence group fairness of the selected set.  To audit if items with similiar scores are if items with similar scores are treated similarly (via equal presence) regardless of group membership.
-- **Relevancce Parity**: To audit if groups are represented proportional to their average score (i.e., score-based relevance).
+- **Relevance Parity**: To audit if groups are represented proportional to their average score (i.e., score-based relevance).
 - **Score Parity**: To audit if the group-total score of the selected set is proportional to the number of items per group in the set.
 - **Score Balance**: To audit if each groups receive and equal share of the selected set's total score.
 
