@@ -7,7 +7,7 @@
 Group fairness auditing methods for set selections
 
 <p align="center">
-<img src="assets/FSC.jpg" height="300" width="500">
+<img src="assets/FSC.jpg">
 </p>
 
 **fins** is a Python library that provides group fairness auditing metrics for a variety of subset selection problems. The package includes a suite of metrics.
