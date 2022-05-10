@@ -1,7 +1,14 @@
-# fins
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![image](https://img.shields.io/pypi/status/finsfairauditing.svg)](https://pypi.org/project/finsfairauditing/)
+[![pypi package](https://img.shields.io/pypi/v/finsfairauditing.svg)](https://pypi.python.org/pypi/finsfairauditing/)
+
+# FINS auditing library
+
 Group fairness auditing methods for set selections
 
-
+<p align="center">
+<img src="assets/FSC.jpg" height="300" width="500">
+</p>
 
 **fins** is a Python library that provides group fairness auditing metrics for a variety of subset selection problems. The package includes a suite of metrics.
 
@@ -10,7 +17,7 @@ Group fairness auditing methods for set selections
 ## Table of Contents
 1. [Basic installation instructions](#basic-installation-instructions)
 2. [Quick start examples](#quick-start-examples)
-3. [Metrics in fins](#mettics-in-find)
+3. [Metrics in fins](#metrics-in-fins)
 4. [Citing fins](#citing-fins)
 
 
@@ -30,6 +37,10 @@ You can also install fins directly from source.
 git clone https://github.com/Kcachel/fins.git
 cd fins
 pip install -r requirements.txt
+```
+3. To use the metrics you need to import the functions from the package:
+```python
+from finsfairauditing import fins
 ```
 
 ## Quick start examples
