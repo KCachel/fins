@@ -1,7 +1,14 @@
-# fins
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![image](https://img.shields.io/pypi/status/finsfairauditing.svg)](https://pypi.org/project/finsfairauditing/)
+[![pypi package](https://img.shields.io/pypi/v/finsfairauditing.svg)](https://pypi.python.org/pypi/finsfairauditing/)
+
+# FINS auditing library
+
 Group fairness auditing methods for set selections
 
-
+<p align="center">
+<img src="assets/FSC.jpg">
+</p>
 
 **fins** is a Python library that provides group fairness auditing metrics for a variety of subset selection problems. The package includes a suite of metrics.
 
@@ -10,7 +17,7 @@ Group fairness auditing methods for set selections
 ## Table of Contents
 1. [Basic installation instructions](#basic-installation-instructions)
 2. [Quick start examples](#quick-start-examples)
-3. [Metrics in fins](#mettics-in-find)
+3. [Metrics in fins](#metrics-in-fins)
 4. [Citing fins](#citing-fins)
 
 
@@ -30,6 +37,10 @@ You can also install fins directly from source.
 git clone https://github.com/Kcachel/fins.git
 cd fins
 pip install -r requirements.txt
+```
+3. To use the metrics you need to import the functions from the package:
+```python
+from finsfairauditing import fins
 ```
 
 ## Quick start examples
@@ -67,7 +78,7 @@ fins provides the following pre-defined group fairness metrics for subset select
 - **Qualified Balance**: equal presence group fairness of the selected set (i.e., score greater than or equal to  q). To audit if the selected set contain an equal number of qualified items from each group.
 - **Calibrated Parity**: statistical parity (proportional presence) group fairness of the selected set from specified score bins. To audit if items with similiar scores are if items with similar scores are treated similarly (via proportional presence) regardless of group membership.
 - **Calibrated Balance**: equal presence group fairness of the selected set.  To audit if items with similiar scores are if items with similar scores are treated similarly (via equal presence) regardless of group membership.
-- **Relevancce Parity**: To audit if groups are represented proportional to their average score (i.e., score-based relevance).
+- **Relevance Parity**: To audit if groups are represented proportional to their average score (i.e., score-based relevance).
 - **Score Parity**: To audit if the group-total score of the selected set is proportional to the number of items per group in the set.
 - **Score Balance**: To audit if each groups receive and equal share of the selected set's total score.
 
